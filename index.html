@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Project</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+  </head>
+  <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.10.52/build/spline-viewer.js"
+    ></script>
+  <body>
+    <header>
+      <div class="header-wrapper">
+        <div class="brand">
+          <input type="checkbox" class="menu-toggle" id="menuToggle"  />
+          <label for="menuToggle" class="container" data-aos="fade-down" data-aos-duration="1000">
+            <div class="box line1"></div>
+            <div class="box line3"></div>
+            <div class="box line2"></div>
+          </label>
+          <a href="index.html"><p id="heading" data-aos="fade-down" data-aos-duration="1500">MCODE</p></a>
+        </div>
+
+        <nav class="desktop-nav">
+          <a href="#" class="a" id="about_button" data-aos="fade-down" data-aos-duration="1500">ABOUT</a>
+          <a href="#" class="a" id="work_button" data-aos="fade-down" data-aos-duration="2000">WORK</a>
+          <a href="#" class="a" id="features_button" data-aos="fade-down" data-aos-duration="2500">FEATURES</a>
+          <a href="#" class="a" id="contact_button" data-aos="fade-down" data-aos-duration="3000">CONTACT</a>
+        </nav>
+
+        <button id="signin" data-aos="fade-down" data-aos-duration="3000">SIGN IN</button>
+
+        <nav class="mobile-nav" id="mobileNav">
+          <ul>
+            <li><a href="#" id="about_button_mobile">ABOUT</a></li>
+            <li><a href="#" id="work_button_mobile">WORK</a></li>
+            <li><a href="#" id="features_button_mobile">FEATURES</a></li>
+            <li><a href="#" id="contact_button_mobile">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="robot-glow"></div>
+    
+    <content>
+      <div class="robot">
+        <spline-viewer
+      url="https://prod.spline.design/3kp96uH5BWpB3nI3/scene.splinecode" data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0" data-aos-duration="1000"
+    ></spline-viewer>
+      </div>
+      <div id="main">
+        <h1 data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0" data-aos-duration="1500">
+          Bringing ideas <br />
+          <span class="b"> to life in </span> <span class="w"> 3D </span>
+        </h1>
+        <p data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0" data-aos-duration="2000">
+          From concept to creation, I design detailed and immersive 3D models
+          <br />that blend creativity with precision. Explore my work and
+          <br />see design in motion.
+        </p>
+        <div id="below-button" >
+          <button id="document">Documentation ></button>
+          <button id="get">Get started ></button>
+        </div>
+      </div>
+    </content>
+    <script src="index.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  </body>
+</html>

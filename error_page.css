@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    height: 100vh;   
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    background-color: rgb(209, 156, 218);
+}
+.for_4 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.7);
+}
+.error_code {
+    text-align: center;
+    font-size: 16vw;
+    margin-bottom: 9%;
+}
+
+h1 {
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+    align-items: center;       
+    gap: 0.2em;
+    color: white;          
+}
+
+.zero_wrapper {
+    position: relative;
+    width: 22vw;
+    height: 22vw;
+}
+
+.for_upper_0 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22vw;
+    width: 22vw;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: -10px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.for_below_0 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 17vw;
+    width: 17vw;
+    background-color: rgb(90, 54, 15);
+    border-radius: 50%;
+    z-index: 2;
+    overflow: hidden;
+}
+.highlight {
+            position: absolute;
+            width: 70%;
+            height: 200%;
+            top: -80%;
+            left: 70%;
+            background: rgba(255,255,255,0.2);
+            border-radius: 30%;
+            transform: rotate(-30deg);
+            clip-path: ellipse(20% 40% at 20% 70%);
+        }
+.for_stick {
+    position: relative;
+    left: -8%;
+    height: 3vw;
+    width: 6.4vw;
+    background-color: white;
+    transform: rotate(45deg);
+    border-top-left-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    z-index: 1;
+    box-shadow: -2px 10px 10px rgba(0, 0, 0, 0.7);
+}
+p {
+    font-size: 3vw;
+    margin: -5%;
+    color: white;
+    font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
